@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dashbroad Page</title>
+	<link rel="stylesheet" type="text/css" href="CSS/header.css">
+	<link rel="stylesheet" type="text/css" href="CSS/dashbroad.css">
+ 
+
+</head>
+<body>
+	<header>
+		<div class="header_container">
+			<h1>SUTRIX HRM</h1>
+			<input type="image" src="image\account_button.png" alt="Submit" width="48" height="48">
+			<input type="image" src="image\undo_button.png" alt="Submit" width="48" height="48" style="left: 0;">
+		</div>	
+	</header>
+
+	<div class="dashbroad_header">
+		<hr>
+		Dashbroad
+	</div>
+	<div id="chart_div" style="height: 200px"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+        var data = google.visualization.arrayToDataTable([
+         ['Role', 'Number of staff', { role: 'style' }],
+         ['Frontend', 80, '#dfdfdf'],            // RGB value
+         ['QC', 50, '#dfdfdf'],            // English color name
+         ['Mobile', 30, '#dfdfdf'],
+         ['PHP', 60, '#dfdfdf'],
+         ['Java', 40, '#dfdfdf'],
+         ['Admin', 5, '#ff8a00'],
+
+      ]);
+
+      var options = {
+        'height':700
+      };
+
+      var chart = new google.visualization.ColumnChart(
+        document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+body{
+	margin: auto;
+}
+.login_form{
+	padding: 50px;
+	height: 100%;
+}
+.login_button{
+	padding: 20px;
+}

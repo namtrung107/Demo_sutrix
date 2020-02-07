@@ -1,0 +1,14 @@
+body{
+	margin: auto;
+	background-color: #efefef;
+}
+.dashbroad_header{
+	font-size: 20px;
+	line-height: 31px;
+	color: ;
+	font-family: "Arial";
+	font-weight: bold;
+	background-color: #dfdfdf;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}

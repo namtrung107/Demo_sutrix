@@ -1,0 +1,22 @@
+.header_container{
+	display: flex;
+  	justify-content: center;
+  	position: relative;
+  	padding-top: 10px;
+  	background-color: white;
+}
+.header_container h1{
+	text-align: center;
+	font-size: 35px;
+	letter-spacing: 0px;
+	line-height: 18px;
+	color: #ff8a00;
+	font-family: "Century Gothic";
+	font-weight: bold;
+}
+.header_container input{
+	position: absolute;
+  	right: 0;
+	width:36; height:28;
+	display: inline-block;
+}
